@@ -4,5 +4,7 @@ broadcast/
 docs/
 .env
 commands.txt
-.github/
-lib/
+password.txt
+keystore/
+geth/jwtsecret
+geth/nodekey
