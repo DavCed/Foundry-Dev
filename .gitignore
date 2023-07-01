@@ -5,6 +5,3 @@ docs/
 .env
 commands.txt
 password.txt
-keystore/
-geth/jwtsecret
-geth/nodekey

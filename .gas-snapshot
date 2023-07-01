@@ -1,0 +1,2 @@
+OperationsTest:testDeployOperationsRunMethod() (gas: 292235)
+OperationsTest:testStoreAndRetrieveDataMethods() (gas: 32046)

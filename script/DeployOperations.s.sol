@@ -5,14 +5,13 @@ import {Script, console} from "../lib/forge-std/src/Script.sol";
 import {Operations} from "../src/Operations.sol";
 
 contract DeployOperations is Script {
-    function run() public {
+    function run() public returns (string memory) {
         vm.startBroadcast();
         Operations ops = new Operations();
-        string memory m1 = ops.storeData("cid1", "url1");
-        // string memory data1 = ops.retrieveData("cid1");
+        ops.storeData("cid1", "url1");
+        string memory urlRetrieved = ops.retrieveData("cid1");
         vm.stopBroadcast();
-        console.log(m1);
-        console.log(block.chainid);
-        // console.log(data1);
+        console.log("CHAIN ID ==>", block.chainid);
+        return urlRetrieved;
     }
 }
