@@ -1,2 +1,2 @@
-OperationsTest:testDeployOperationsRunMethod() (gas: 292235)
-OperationsTest:testStoreAndRetrieveDataMethods() (gas: 32046)
+DistributedStorageTest:testDeployDistributedStorageRunMethod() (gas: 515176)
+DistributedStorageTest:testStoreAndGetFileMethods() (gas: 100016)
