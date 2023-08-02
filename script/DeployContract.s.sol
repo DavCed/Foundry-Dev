@@ -7,7 +7,7 @@ import {DistributedStorage} from "../src/DistributedStorage.sol";
 contract DeployDistributedStorage is Script {
     function run() public {
         vm.startBroadcast();
-        DistributedStorage ds = new DistributedStorage();
+        new DistributedStorage();
         vm.stopBroadcast();
     }
 }
